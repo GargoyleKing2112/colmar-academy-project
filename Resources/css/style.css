@@ -1,0 +1,353 @@
+html{
+    font-size: 22px;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+/* navigation Bar*/
+nav ul{
+    list-style-type: none;
+    margin-right: 8px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-right:16px; 
+    color: black;
+}
+
+/*Logo */
+#Colmar{
+    opacity: .9;
+}
+
+#academy{
+    opacity: .7;
+}
+
+.logo{
+    display: inline-block;
+    width: 23%;
+    height: 32px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+    margin-left: 0;
+}
+
+.logo img{
+    height: 50px;
+    float: left;
+    margin-right: 5px;
+}
+
+/* Header */
+
+header{
+    background-color: lightgray;
+}
+
+/* Flex container Class*/
+.flex-container{
+    border: solid 1px black ;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* box1 */
+.box-1{
+    margin-top:32px;
+    padding: 32px 0 32px 24px;
+    background-color: lightgray;
+    justify-content: space-between;
+}
+
+.box-1 a{
+    text-decoration: none;
+    color:white;
+    background-color: lightslategrey;
+    font-size: 34px;
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+    height: 52px;
+    margin-left: 0;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 8px;
+
+}
+
+.box-1 img{
+    width: 60%;
+    height: auto;
+    margin-right: 24px;
+}
+
+.box-1 .text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    align-content: center;
+    margin-left: auto;
+    width: 35%;
+}
+
+.box-1 h1{
+    font-size: 60px;
+    opacity: .7;
+}
+
+.box-1 h2{
+    opacity: .7;
+}
+
+/* Box-2 */
+
+.box-2{
+    width: 98.5%;
+    padding: 32px 0 32px 24px;
+}
+
+/*box 2 item1*/
+.box-2 .item-1{
+    width: 60%;
+    height: 95%;
+}
+
+.box-2 .item-1 img{
+    width: 100%;
+    height: auto;
+}
+
+/*box 2 item 2*/
+
+.box-2 .item-2{
+    margin-left: 32px;
+}
+
+.box-2 .item-2 img{
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+
+.box-2 .item-2 a{
+    text-decoration: none;
+}
+
+.orientation, .guest, .campus{
+    display : flex;
+}
+
+
+.box-2 .item-2 .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Box 3*/
+
+.box-3{
+    width: 100%;
+    flex-flow: wrap;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+
+.box-3 .text{
+    width: 100%;
+    display: block;
+}
+
+.flex-cont{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.computer-art, .design, .software-eng, .marketing, .business, .data{
+    width: 30%;
+    margin-right: 20px;
+    background-color: w;
+}
+
+.flex-cont img{
+    width: 100%;
+}
+
+.flex-cont p{
+    font-size: 26px;
+}      
+
+/*box-4 */
+
+.box-4{
+    width: 100%;
+}
+video{
+    width: 100%;
+}
+
+.box-4{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.flex-cont1{
+    display: flex;
+    justify-content: center;
+}
+
+.vid{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.fisma, .now-and-then{
+    display: flex;
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+.fisma{
+    margin-bottom: 30px;
+    background-color: lightgray;
+}
+
+.fisma .text, .now-and-then .text{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer*/
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li{
+    float: right;
+    margin-right: 16px;
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 640px){
+    nav{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .mobile-nav{
+        width: 100%;
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .box-1{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .box-1 img{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100;
+    }
+    
+    .box-1 .text{
+        margin-right: auto;
+        margin-left: auto;
+        width: 95%;
+    }
+
+
+    .box-2 .item-1{
+        display: none;
+    }
+
+    .orientation, .guest, .campus{
+        flex-direction: column;
+    }
+
+    .box-2{
+        width: 95%;
+    }
+    .box-2 .item-2{
+        margin-left: 0;
+    }
+
+    .box-3 img{
+        display: none;
+    }
+
+    .software-eng, .computer-art, .design, .data, .business, .marketing{
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightgray;
+    }
+
+    .box-3 p{
+        display: none;
+    }
+    .box-3{
+        padding-right: 0;
+        background-color: white;
+        width: 98.5%;
+    }
+
+    .box-4 .subitem-1{
+        display: none;
+    }
+
+    .box-4 p{
+        display: none;
+    }
+    .vid h2{
+        display: none;
+    }
+    .vid{
+        margin-right: 0;
+        width: 100%;
+    }
+    video{
+        width: 95%;
+    }
+
+}
